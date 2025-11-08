@@ -3,8 +3,8 @@ from typing import TypedDict
 
 # 1) map + lambda: kvadriraj duljine nizova
 # map(function, iterables)
-list_of_strings: list = ["jabuka", "kruška", "banana", "naranča"]
-squared_lengths: list = list(map(lambda s: len(s) ** 2, list_of_strings))
+list_of_strings: list[str] = ["jabuka", "kruška", "banana", "naranča"]
+squared_lengths: list[int] = list(map(lambda s: len(s) ** 2, list_of_strings))
 print(squared_lengths)  # [36, 36, 36, 49]
 
 # 2) filter + lambda: contains numbers > 5
