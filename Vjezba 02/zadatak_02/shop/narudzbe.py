@@ -26,7 +26,8 @@ def _find_u_skladistu(naziv: str) -> Proizvod | None:
 
 def napravi_narudzbu(naruceni_proizvodi: list[ProizvodOrderType]) -> Narudzba | None:
     # three checks not needed because of static typing:
-    # - must be a list # - list must be only composed of dictionaries
+    # - must be a list
+    # - list must be only composed of dictionaries
     # - all dictionaries have the needed keys (naziv, cijena, narucena_kolicina)
 
     # list is not allowed to be empty
